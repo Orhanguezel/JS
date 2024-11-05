@@ -40,5 +40,20 @@ person('Ali', 17, checkAge);
 
 console.clear();
 
+// function parameter1 : number, parameter2 : addFive function
+// check the number is greater than 10 dann wird adding 5 orherwise log the number without adding
+
+function sumFive(num, addFive){
+    num > 10 ? addFive(num) : console.log(num);
+
+}
+
+function plusFive(n){
+    console.log(n + 5);
+}
+
+sumFive(9, plusFive);//9
+sumFive(11, plusFive);//16
+
 
 
