@@ -19,7 +19,7 @@ console.log("first", first);
 console.log("second", second);
 console.log("third", third);
 console.log(first, second, third);
-console.log(rest);
+console.log(rest);// 
 
 const car ={
     model: "Ford",

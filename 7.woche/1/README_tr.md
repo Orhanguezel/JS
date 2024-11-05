@@ -30,7 +30,7 @@ const employees = ["John", "Sarah", "Tim", "Kate", "Anna"];
 
 // Beklenen Çıktı:
 // İlk Çalışan: John
-// İkinci Çalışan: Sarah
+// İkinci Çalışan: Sarazzzzzz+    
 // Diğer Çalışanlar: ["Tim", "Kate", "Anna"]
 ```
 
