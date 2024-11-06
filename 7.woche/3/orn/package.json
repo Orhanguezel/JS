@@ -1,0 +1,12 @@
+{
+  "name": "orn",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "İşte haritalama (map) konusunda benzer 10 görev:",
+  "main": "orn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
