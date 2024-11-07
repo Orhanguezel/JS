@@ -55,3 +55,62 @@ const factorial = Array.from({ length: number }, (_, i) => i + 1).reduce((acc, n
 }, 1);
 
 console.log(`${number} sayısının faktöriyeli:`, factorial);
+
+//soru 6
+
+const grades = [85, 90, 78, 92, 88];
+
+const averageGrade = grades.reduce((acc, grade) => {
+    return acc + grade;
+}, 0) / grades.length;
+
+console.log("Sınıfın Not Ortalaması:", averageGrade);
+
+//soru 7
+
+const words1 = ["apple", "banana", "cherry", "watermelon", "grape"];
+
+const longestWord = words1.reduce((acc, word) => {
+    return word.length > acc.length ? word : acc;
+});
+
+console.log("En Uzun Kelime:", longestWord);
+
+//soru 8
+
+const decimalPrices = [12.49, 7.99, 5.49, 15.99, 3.75];
+
+const totalRoundedPrice = decimalPrices.reduce((acc, price) => {
+    return acc + Math.round(price);
+}, 0);
+
+console.log("Yuvarlanmış Toplam Fiyat:", totalRoundedPrice);
+
+//soru 9
+
+const numbers = [10, -5, 20, -15, 30, -25];
+
+const { positiveSum, negativeSum } = numbers.reduce((acc, num) => {
+   return {
+       positiveSum: num > 0 ? acc.positiveSum + num : acc.positiveSum,
+       negativeSum: num < 0 ? acc.negativeSum + num : acc.negativeSum,
+   };
+}, { positiveSum: 0, negativeSum: 0 });
+
+console.log("Pozitif Sayıların Toplamı:", positiveSum);
+console.log("Negatif Sayıların Toplamı:", negativeSum);
+
+//soru 10
+
+const products = [
+    { name: "Laptop", weight: 2.5 },
+    { name: "Phone", weight: 0.5 },
+    { name: "Monitor", weight: 3.0 },
+    { name: "Keyboard", weight: 0.7 },
+];
+
+const totalWeight = products.reduce((acc, product) => {
+    return acc + product.weight;
+}, 0);
+
+console.log("Toplam Ağırlık:", totalWeight);
