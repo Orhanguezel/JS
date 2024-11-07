@@ -18,3 +18,18 @@ function printNames(namesArray) {
 }
 
 printNames(subcategoryNames2);
+
+// soru 1
+
+const itemPrices = [];
+
+categoryData.subcategories.forEach(subcategory => {
+    subcategory.items.forEach(item => {
+        itemPrices.push(item.prices);
+    });
+});
+
+console.log(itemPrices);
+
+//soru 2
+
