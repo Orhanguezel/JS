@@ -91,7 +91,7 @@ const {stock, price, ...otherProps} = product;
 
 console.log(`Stock: ${stock}
 Price: ${price}
-Diger bilgiler: ${JSON.stringify(otherProps)}`);
+Diger bilgiler: ${JSON.stringify(otherProps)}`); // {name: "Laptop", manufacturer: "Dell", color: "Black"}
 console.clear();
 
 // görev-12

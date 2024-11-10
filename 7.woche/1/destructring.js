@@ -1,3 +1,4 @@
+/*
 const fruits = ['banana', 
     'apple', 
     'orange',
@@ -19,8 +20,9 @@ console.log("first", first);
 console.log("second", second);
 console.log("third", third);
 console.log(first, second, third);
-console.log(rest);// 
-
+console.log(rest);// ["orange", "lemon", "cherry", "strawberry"]
+console.log(JSON.parse(rest));// ["orange", "lemon", "cherry", "strawberry"]
+*/
 const car ={
     model: "Ford",
     speed: 200,
