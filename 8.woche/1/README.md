@@ -8,9 +8,13 @@
 
 3. Wo wird am meistens `OOP` Benutzt (sprachen)?
 
+4. Date Object ?
+
 ### Resources :
 
 - [Classes JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+
+- [Date object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
 ### Tasks :
 

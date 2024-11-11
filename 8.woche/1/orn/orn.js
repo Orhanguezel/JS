@@ -1,4 +1,4 @@
-/*console.log(this);
+console.log(this);
 const obj = {
     name: 'Example',
     showThis() {
@@ -38,12 +38,12 @@ function Employee(name, age, salary) { // Yapıcı Fonksiyon - Constructor
     }
 }
 
-const emp1 = new Employee("Ali", 20, 4000);
-const emp2 = new Employee("Veli", 30, 5000);
-/*
+const emp3 = new Employee("Ali", 20, 4000);
+const emp4 = new Employee("Veli", 30, 5000);
+
 console.log(emp1); // Employee { name: 'Ali', age: 20, salary: 4000 }
 console.log(emp2); // Employee { name: 'Veli', age: 30, salary: 5000 }
-*
+
 
 emp1.showInfos();
 emp2.showInfos();console.clear();
@@ -69,12 +69,11 @@ function Employee(name,age){
         console.log("Bu bir Employee objesidir");
     }
 }
-const emp1=new Employee("Ali",20);
-console.log(emp1);
-console.log(emp1.name);
-console.log(emp1.toString());
-
-*/
+const emp5=new Employee("Ali",20);
+console.log(emp5);
+console.log(emp5.name);
+console.log(emp5.toString());
+console.log(emp5.showInfos());
 
 function Employee(name,age){
     this.name=name;
