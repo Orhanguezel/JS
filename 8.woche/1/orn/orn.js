@@ -57,7 +57,7 @@ console.log(object); // {}
 console.dir(object); // { name: 'Ali' }
 console.log(Object.getPrototypeOf(object));
 console.log(object.constructor);
-*/
+
 
 function Employee(name,age){
     this.name=name;
@@ -73,3 +73,21 @@ const emp1=new Employee("Ali",20);
 console.log(emp1);
 console.log(emp1.name);
 console.log(emp1.toString());
+
+*/
+
+function Employee(name,age){
+    this.name=name;
+    this.age=age;
+    
+
+}
+Employee.prototype.showInfos=function(){
+        console.log("Isim: " + this.name + " Yaş: " + this.age);
+    }
+
+const emp1=new Employee("Ali",20);
+const emp2=new Employee("Veli",30);
+
+emp1.showInfos();
+console.log(emp1);
