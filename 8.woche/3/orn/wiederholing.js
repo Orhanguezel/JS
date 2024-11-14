@@ -175,8 +175,6 @@ console.log(person13); // {name: "Ali", age: 30, city: "Istanbul", country: "Tur
 
 console.clear();
 
-
-
 // structuredClone(obj)
 const person14 = {
   name: "Ali",
@@ -193,28 +191,27 @@ console.clear();
 // Yüzeysel (Shallow) ve Derin (Deep) Kopyalama Farkı,
 
 const person16 = {
-    name: "Ali",
-    age: 30,
-    city: "Istanbul",
-    country: "Turkey",
-    job: {
-        title: "Engineer",
-        salary: 5000,
-    },
-    };
+  name: "Ali",
+  age: 30,
+  city: "Istanbul",
+  country: "Turkey",
+  job: {
+    title: "Engineer",
+    salary: 5000,
+  },
+};
 
-    const person17 = { ...person16 }; // Yüzeysel kopyalama
-    console.log(person17);
-    console.log(person17 === person16); // false
-    console.log(person17.job === person16.job); // true
+const person17 = { ...person16 }; // Yüzeysel kopyalama
+console.log(person17);
+console.log(person17 === person16); // false
+console.log(person17.job === person16.job); // true
 
-    const person18 = JSON.parse(JSON.stringify(person16)); // Derin kopyalama
-    console.log(person18);
-    console.log(person18 === person16); // false
-    console.log(person18.job === person16.job); // false
+const person18 = JSON.parse(JSON.stringify(person16)); // Derin kopyalama
+console.log(person18);
+console.log(person18 === person16); // false
+console.log(person18.job === person16.job); // false
 
-    console.clear();
-
+console.clear();
 
 // Object Destructuring
 const person19 = {
@@ -237,82 +234,38 @@ const { name: ad2, ...rest } = person19;
 console.log(ad2, rest);
 
 const person20 = {
-    name: "Ali veli",
-    age: 30,
-    country: "Turkey",
-  };
+  name: "Ali veli",
+  age: 30,
+  country: "Turkey",
+};
 
-  const { name: ad1, age: yas1, city: sehir1 = "Bilinmiyor", country: ulke1 } = person20;
-  console.log(ad1, yas1, sehir1, ulke1);
+const {
+  name: ad1,
+  age: yas1,
+  city: sehir1 = "Bilinmiyor",
+  country: ulke1,
+} = person20;
+console.log(ad1, yas1, sehir1, ulke1);
 
-    console.clear();
-
+console.clear();
 
 // Object Literal
 const name2 = "Ali";
 const age2 = 30;
 
 const person21 = {
-  name2,  // name: name
-  age2    // age: age
+  name2, // name: name
+  age2, // age: age
 };
 
 console.log(person21); // Çıktı: { name: "Ali", age: 30 }
 const name3 = "vorname";
 const age3 = "alter";
 const person22 = {
-    [name3]: "Ali",
-    [age3]: 30,
-    };
-
-    console.log(person22); // Çıktı: { vorname: "Ali", alter: 30 }
-
-    console.clear();
-
-
-// Object Constructor
-const person23 = new Object();
-person23.name = "Ali";
-person23.age = 30;
-person23.city = "Istanbul";
-person23.country = "Turkey";
-console.log(person23);
-
-const person24 = new Object({
-    name: "Ali",
-    age: 30,
-    city: "Istanbul",
-    country: "Turkey",
-    });
-    console.log(person24);
-
-    console.clear();
-// Object.create() Metodu
-// Object Prototype
-// Object Inheritance
-// Object Methodları
-// Object Kullanım Alanları
-// Object Örnekleri
-// Object Özellikleri
-// Object Yapısı
-// Object İçinde Object
-// Object İçinde Array
-// Object İçinde Function
-// Object İçinde Method
-// Object İçinde Property
-// Object İçinde Constructor
-// Object İçinde Prototype
-
-
-
-// Yüzeysel (Shallow) ve Derin (Deep) Kopyalama Farkı, Object.assign() ve Spread Operator, JSON.stringify() ve JSON.parse() Metodları, structuredClone(obj), Object Destructuring, Object Literal, Object Constructor, Object.create() Metodu, Object Prototype, Object Inheritance, Object Methodları, Object Metodları, Object Kullanım Alanları, Object Örnekleri, Object Özellikleri, Object Yapısı, Object İçinde Object, Object İçinde Array, Object İçinde Function, Object İçinde Method, Object İçinde Property, Object İçinde Constructor, Object İçinde Prototype, Object İçinde Inheritance
-const person8 = {
-  name: "Ali",
-  age: 30,
-  city: "Istanbul",
-  country: "Turkey",
-  job: {
-    title: "Engineer",
-    salary: 5000,
-  },
+  [name3]: "Ali",
+  [age3]: 30,
 };
+
+console.log(person22); // Çıktı: { vorname: "Ali", alter: 30 }
+
+console.clear();
