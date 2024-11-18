@@ -1,0 +1,36 @@
+// abstract class
+
+abstract class KrediBase{
+    constructor(){
+
+    }
+    abstract kaydet():void{
+        console.log("kaydedildi");
+    }
+    abstract hesapla():void;
+}
+class TuketiciKredi extends KrediBase{
+    constructor(){
+        super();
+    }
+    hesapla():void{
+        console.log("tüketici kredisine göre hesap yapıldı");
+    }
+}
+
+class KonutKredi extends KrediBase{
+    constructor(){
+        super();
+    }
+    hesapla():void{
+        console.log("konut kredisine göre hesap yapıldı");
+    }
+}
+
+let tuketiciKredi = new TuketiciKredi();
+tuketiciKredi.hesapla();
+tuketiciKredi.kaydet();
+
+let konutKredi = new KonutKredi();
+konutKredi.hesapla();
+konutKredi.kaydet();
