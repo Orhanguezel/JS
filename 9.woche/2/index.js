@@ -1,0 +1,20 @@
+var myName = "Mehmet";
+var mySurname = "Kara";
+var maas = 5000;
+var myAge = 30; // number oldugunu anlar. 
+var isMan = true;
+var myArray = [1, 2, 3, 4, 5];
+var myArray2 = [1, 2, 3, 4, 5];
+var myArray3 = ["a", "b", "c"];
+var myArray4 = [true, false, true];
+var myArray5 = [1, "a", true];
+var myArray6 = [1, "a", 2, "b"];
+var myArray7 = [1, true, 2, false];
+var myArray8 = [1, true, 2, false, "a"];
+var myArray9 = [1, true, 2, false, "a", [1, 2, 3]];
+var myArray10 = [1, true, 2, false, "a", [1, "b", 3]];
+var myArray11 = [1, true, 2, false, "a", [1, "b", 3, true]];
+console.log(myName);
+console.log(mySurname);
+console.log(maas);
+console.log(myAge);

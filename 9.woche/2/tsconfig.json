@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6", // JavaScript çıktısının hangi sürümde olacağını belirler
+    "module": "commonjs", // Modül sistemi
+    "outDir": "./dist", // JavaScript dosyalarının çıkış dizini
+    "rootDir": "./src", // TypeScript dosyalarının kaynak dizini
+    "strict": true, // Sıkı tür denetimi
+    "esModuleInterop": true // ES modülleriyle uyumluluk
+  },
+  "include": ["src"], // Hangi dosyalar derlenecek
+  "exclude": ["node_modules"] // Hariç tutulacak dosyalar
+}
