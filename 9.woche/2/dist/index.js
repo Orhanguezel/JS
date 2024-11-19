@@ -226,7 +226,7 @@ console.log(keys); // ["age", "isMan", "name"]
 let person6 = {
     name: "Mehmet",
     age: 30,
-    isMan: true
+    isMan: true,
 };
 for (let key in person6) {
     console.log(key + ": " + person6[key]);
@@ -243,3 +243,120 @@ let persons = [
 console.log(persons[0].name); // Mehmet
 console.log(persons[0].age); // 30
 console.log(persons[0].isMan); // true
+console.log(persons[1].name); // Ahmet
+//**9. Diziler ve Nesnelerin Kullanımı**
+let persons2 = [
+    { name: "Mehmet", age: 30, isMan: true },
+    { name: "Ahmet", age: 25, isMan: false },
+    { name: "Ayse", age: 20, isMan: false }
+];
+for (let person of persons2) {
+    console.log(person.name + ": " + person.age);
+}
+let person7 = {
+    name: "Mehmet",
+    age: 30,
+    isMan: true
+};
+console.log(person7.name); // Mehmet
+let persons3 = [
+    { name: "Mehmet", age: 30, isMan: true },
+    { name: "Ahmet", age: 25, isMan: false },
+    { name: "Ayse", age: 20, isMan: false }
+];
+for (let person of persons3) {
+    console.log(person.name + ": " + person.age);
+}
+//**11. Sınıflar**
+class Person3 {
+    constructor(name, age, isMan) {
+        this.name = name;
+        this.age = age;
+        this.isMan = isMan;
+    }
+    greet() {
+        console.log("Hello, " + this.name + "!");
+    }
+}
+let person8 = new Person3("Mehmet", 30, true);
+person8.greet(); // Hello, Mehmet!
+// #### Sınıfların Kalıtımı:
+class Person4 {
+    constructor(name, age, isMan) {
+        this.name = name;
+        this.age = age;
+        this.isMan = isMan;
+    }
+    greet() {
+        console.log("Hello, " + this.name + "!");
+    }
+}
+class Employee extends Person4 {
+    constructor(name, age, isMan, salary) {
+        super(name, age, isMan);
+        this.salary = salary;
+    }
+    greet() {
+        console.log("Hello, " + this.name + "!");
+        console.log("Your salary is " + this.salary + ".");
+    }
+}
+let employee = new Employee("Mehmet", 30, true, 5000);
+employee.greet(); // Hello, Mehmet! Your salary is 5000.
+// #### Sınıfların Metotları:
+class Person5 {
+    constructor(name, age, isMan) {
+        this.name = name;
+        this.age = age;
+        this.isMan = isMan;
+    }
+    greet() {
+        console.log("Hello, " + this.name + "!");
+    }
+}
+class Employee2 extends Person5 {
+    constructor(name, age, isMan, salary) {
+        super(name, age, isMan);
+        this.salary = salary;
+    }
+    greet() {
+        super.greet();
+        console.log("Your salary is " + this.salary + ".");
+    }
+}
+//**12. Sınıfların Metotları**
+class Person6 {
+    constructor(name, age, isMan) {
+        this.name = name;
+        this.age = age;
+        this.isMan = isMan;
+    }
+    greet() {
+        console.log("Hello, " + this.name + "!");
+    }
+}
+class Employee3 extends Person6 {
+    constructor(name, age, isMan, salary) {
+        super(name, age, isMan);
+        this.salary = salary;
+    }
+    greet() {
+        super.greet();
+        console.log("Your salary is " + this.salary + ".");
+    }
+}
+let employee2 = new Employee3("Mehmet", 30, true, 5000);
+employee2.greet(); // Hello, Mehmet! Your salary is 5000.
+// #### Sınıfların Metotları ve Parametreler:
+class Person7 {
+    constructor(name, age, isMan) {
+        this.name = name;
+        this.age = age;
+        this.isMan = isMan;
+    }
+    greet(greeting) {
+        console.log(greeting + ", " + this.name + "!");
+    }
+}
+let person9 = new Person7("Mehmet", 30, true);
+person9.greet("Hello"); // Hello, Mehmet!
