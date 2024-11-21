@@ -315,6 +315,8 @@ document.addEventListener("click", (event) => {
     console.log("Tıklanan öğe:", event.target); // Tıklanan öğeyi döndürür
   });
 
+  
+
 
 
 
