@@ -71,3 +71,7 @@ newParagraph.innerText = "Bu bir paragraf";
 //document.body.append(newParagraph);// div içerisine ekler.
 
 // document.body.append(newParagraph);
+
+const a = getQuerySelectorAll("a");
+const b = document.querySelectorAll("a");
+const c = document.getElementsByClassName
